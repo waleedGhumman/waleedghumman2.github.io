@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2b2d42;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#intro {
+    background-color: #fff;
+    border: 2px solid #44475a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+#storyboard {
+    background-color: #fff;
+    border: 2px solid #44475a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+#storyboard h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#storyboard p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.storyboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Makes images responsive */
+    gap: 20px;
+    justify-items: center;
+}
+
+.storyboard-item {
+    text-align: center; /* Centers the content in each item */
+}
+
+.storyboard-item img {
+    width: 100%; /* Make image fill the container */
+    max-width: 150px; /* Ensure images are not too large */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #44475a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.storyboard-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover for interactivity */
+}
+
+.storyboard-description {
+    margin-top: 10px; /* Add space between image and description */
+    font-size: 14px; /* Set font size for description */
+    color: #666; /* Set description text color */
+    max-width: 150px; /* Limit description width to match image size */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sketches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Makes images responsive */
+    gap: 20px;
+    justify-items: center;
+}
+
+.sketch-item {
+    text-align: center; /* Centers the content in each item */
+}
+
+.sketch-item img {
+    width: 100%; /* Make image fill the container */
+    max-width: 150px; /* Ensure images are not too large */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #44475a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.sketch-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover for interactivity */
+}
+
+.sketch-description {
+    margin-top: 10px; /* Add space between image and description */
+    font-size: 14px; /* Set font size for description */
+    color: #666; /* Set description text color */
+    max-width: 150px; /* Limit description width to match image size */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#demo {
+    text-align: center;
+}
+
+#demo video {
+    width: 100%;
+    max-width: 600px; /* Control max width of the video */
+    border: 2px solid #44475a;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #2b2d42;
+    color: white;
+    padding: 10px;
+}
