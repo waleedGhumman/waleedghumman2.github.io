@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Project Description Section -->
+<div class="description">
+    <h2 onclick="toggleDescription()">About This Portfolio <span id="arrow">&#9660;</span></h2>
+    <div id="description-content">
+        <p>
+            This portfolio is for Project 2 in CPSC 581.  Our objective was to create a sensor-based phone unlocking system that is unique in terms of both usefulness and originality. Each team member first contributed original ideas. In order to generate ideas and experiment with notions influenced by personal experiences and real-world situations, each of us began with ten preliminary sketches.
+
+            During the brainstorming phase, each member contributed unique insights. One member suggested a shake-to-unlock feature that triggered an animation, while another proposed a voice-activated unlocking method using ambient sound detection. Another teammate explored gestures based on gripping patterns. Our challenge was to narrow down the options to a single, feasible design.
+
+            After some feedback from peers, we started eliminating ideas which could be time consuming. We decided on a gesture-based unlocking mechanism that captures both user interaction and creativity (it was inspired from Bobba tea example shown in class). Our final approach integrates elements from each initial idea, creating a balance between uniqueness and simplicity to ensure it can be effectively prototyped within our timeline
+        </p>
+        <p><strong>Team Members:</strong></p>
+        <ul>
+            <li>Waleed</li>
+            <li>Kevin</li>
+            <li>Aman</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- Initial Sketches Section -->
+<section id="initial-sketches">
+    <h2>10 Initial Sketches</h2>
+    <div class="gallery">
+        <figure>
+            <img src="images/sketch1.jpg" alt="Sketch 1">
+            <figcaption>Sketch 1: Idea for tattoo-based unlock pattern. a user would scan a small sized qr code on their wrists.</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch2.jpg" alt="Sketch 2">
+            <figcaption>Sketch 2: Unlock using a specific blow pattern. a user would blow on the mic in a certain way which matches their frequency </figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch3.jpg" alt="Sketch 3">
+            <figcaption>Sketch 3: Concept for shake and tilt unlock pattern. a user would move ball from top shelf to prechosen shelp in a spefic patter using gyroscope</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch4.jpg" alt="Sketch 4">
+            <figcaption>Sketch 4: Directional movement unlock design.a user would move their phone in certain pattern like up up down left</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch5.jpg" alt="Sketch 5">
+            <figcaption>Sketch 5: Spin wheel gesture-based unlock.a user would chose number (like old telephones) and move phone to select it</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch6.jpg" alt="Sketch 6">
+            <figcaption>Sketch 6: Maze-based unlock using gyroscope. a user would fill tiles of maze using gyroscope</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch7.jpg" alt="Sketch 7">
+            <figcaption>Sketch 7: Unlock by pressure pattern. a  user would press down certain keypoints on screen with certain pressure</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch8.jpg" alt="Sketch 8">
+            <figcaption>Sketch 8: Heartbeat-based unlock using biometric sensor. a user would scan their heart beat pattern using either some microphone or maybe using heart beat monitor, sice their beat pattern would be unique</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch9.jpg" alt="Sketch 9">
+            <figcaption>Sketch 9: Scent-based unlock concept.a user would unlock their phone using their own body signature smell using smell sensor</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sketch10.jpg" alt="Sketch 10">
+            <figcaption>Sketch 10: Mouth reflection-based unlock with vocal authentication. a user would put phone in their mouth and since their jawlines or teeth will be different, different amount of light will be present inside mouth to scan using light sensor or maybe a person could say aahhhhh and microphone would scan that</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- Refined Sketches Section -->
+<section id="refined-sketches">
+    <h2> Refined Sketches</h2>
+    <div class="gallery">
+        <figure>
+            <img src="images/refined1.jpg" alt="Refined Sketch 1">
+            <figcaption>Refined Sketch 1: a user would shake phone to mix bobba in certain consistancy or color. This was too similar to class example so we decided not to do.</figcaption>
+        </figure>
+        <figure>
+            <img src="images/refined2.jpg" alt="Refined Sketch 2">
+            <figcaption>Refined Sketch 2:a user would choose fruits and drag drop into blender and shake. so the combination of fruits and shaking will be password.</figcaption>
+        </figure>
+        <figure>
+            <img src="images/refined3.jpg" alt="Refined Sketch 3">
+            <figcaption>Refined Sketch 3: similar to sketch2, user would drag drop colors into drink and shake .</figcaption>
+        </figure>
+        <figure>
+            <img src="images/refined4.jpg" alt="Refined Sketch 4">
+            <figcaption>Refined Sketch 4: this one was very simple and last resort if we couldnt figure out colors and mixing stuff. in this one, a user would press volume or power combination buttons and shake or move phone in spefic pattern.</figcaption>
+        </figure>
+        <figure>
+            <img src="images/refined5.jpg" alt="Refined Sketch 5">
+            <figcaption>Refined Sketch 5: a user would choose colors and drag drop into glass and shake. so the combination of colors into cocktail and shaking will be password.</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- Final Project Video Section -->
+<!-- Final Project Video Section -->
+<section id="final-video">
+    <h2>Final Project Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iQQwU-qSa0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+
+<!-- JavaScript for toggling description -->
+<script>
+function toggleDescription() {
+    var content = document.getElementById('description-content');
+    var arrow = document.getElementById('arrow');
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.innerHTML = '&#9650;'; // Up arrow
+    } else {
+        content.style.display = 'none';
+        arrow.innerHTML = '&#9660;'; // Down arrow
+    }
+}
+</script>
+
+</body>
+</html>
